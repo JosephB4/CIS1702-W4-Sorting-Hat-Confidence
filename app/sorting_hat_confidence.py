@@ -15,3 +15,16 @@ def determine_house_by_confidence(confidence):
     # You should not need and / or for this challenge.
     pass
     # Remember to return values/variables rather than printing them
+
+confidence = int(input("How confident are you? (0-10) "))
+
+if confidence >= 8:
+    print("Gryffindor!")
+elif confidence == 6 or confidence == 7:
+    print("Ravenclaw!")
+elif confidence == 4 or confidence == 5:
+    print("Hufflepuff!")
+elif confidence <= 3:
+    print("Slytherin!")
+else:
+    print("Thats not a valid score.")
